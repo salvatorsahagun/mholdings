@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+<!---Required meta tags always come first---------------->
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <meta http-equiv = "x-ua-compatible" content="ie=edge">
+
+<!-- Bootstrap CSS---------------------------------------->
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel = "stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles/styles.css">
+<link rel = "stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+                <title>Mahogany Holdings</title>
+</head>
+<!------------------------------------------------------->
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<!----------------------Navigation Bar-------------------------------->
+    <nav id = "navbar" class = "navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
+    <div class = "container">
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class = "collapse navbar-collapse" id= "Navbar" >
+        <a class = "navbar-brand" href ="#">Mahogany Holdings</a>   
+            <ul class = "navbar-nav mr-auto">
+                    <li class = "nav-item"><a class = "nav-link" href = "#home">Home</a></li>
+                    <li class = "nav-item"><a class = "nav-link" href = "#services">Services</a></li>
+                    <li class = "nav-item"><a class = "nav-link" href = "#recentdeals">Recent Deals</a></li>
+                    <li class = "nav-item"><a class = "nav-link" href = "#contact">Contact Us</a></li>
+            </ul>  
+        </div>       
+        </div>
+    </div>
+    </nav>
+
+<!-------------------------------Header-------------------------------->
+    <header class = "jumbotron">
+        <div id = "home" class = "container">
+            <div class = "row row-header">
+               
+            <img src = "img/jumbotron.jpg" class = "img-fluid rounded mx-auto d-lock">
+
+
+            </div>
+        </div>
+    </header>
+
+
+
+    <!----------------------Service Descriptions--------------------->
+    <div id = "services" class="row row-content">
+        <div class="col-12">
+            <div id = "accordion">
+                <div class = "card">
+                        <div class = "card-header" role = "tab" id = "servicehead">
+                            <h3 class = "mb-0">
+                                <a data-toggle ="collapse" data-target="#Service">Summary of Services</a></h3>
+                        </div>
+                        <div role = "tabpanel" class = "collapse show" id = "peter" data-parent="#accordian">
+                            <div class = "card-body"> 
+                                    <p class="d-none d-sm-block">Our company provides three core services. Developer financing, property managment, and general consulting.</p>
+                                    </div>
+                          </div>
+                        </div>
+                <div class = "card">
+                <div class = "card-header" role = "tab" id = "financing">
+                    <h3 class = "mb-0">
+                         <a data-toggle = "collapse" data-target="#financing" id = "#accordian">Developer Financing </a></h3>
+                     </div>
+
+                <div role = "tabpanel" class = "collapse show" id = "financing" data-parent="#accordian">
+                    <div class = "card-body">
+                        <p class="d-none d-sm-block">
+                            No matter if you are developing the next 1200ft high rise, perhaps simply looking to refinance or buy a small strip mall.
+                            Mahogany Holdings has you covered. Simply fill out our application, once all the information checks out we issue an offer. 
+                            Once the offer is signed we can have the funds in you bank account in as soon as two weeks time. 
+                        </em></p> 
+                        <button type="button" class="btn btn-outline-success" data-toggle= "modal" data-target="#LoanModal">Apply Now</button>
+                         </div>
+                    </div>
+                </div>
+            
+                <div class = "card">
+                <div class = "card-header" role = "tab" id = "Managment">
+                    <h3 class = "mb-0">
+                            <a data-toggle = "collapse" data-target = "#Managment" id = "#accordian">Property Managment</a></h3>
+                    </div>   
+
+                        <div role = "tabpanel" class = "tab-panel fade show active" id = "managment">
+                            <div class = "card-body">
+                                <p class="d-none d-sm-block">
+                                    There is so much more to property managment then simply collecting rent. A good building will need several things from matience, tennant improvements, marketing and
+                                    a assortment of other needs.  Let Mahogany guide you through these needs so you can a few less headaches before you are ready to reach out!
+                                </em></p>
+                                </div>
+                             </div>
+                         </div>     
+                
+                         <div class="card">
+                         <div class="card-header" role="tab" id="Consulting">
+                            <h3 class = "mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-target="#consulting">  Consulting</a></h3>
+                         </div>   
+                                <div role = "tabpanel" class = "tab-panel fade show active" id = "Alberto">  
+                                    <div class = "card-body">
+                                        <p class="d-none d-sm-block">We confirmed in 2008 that the market is like the weather. Unpridicatable.
+                                            That is why we created Mahogany to help our customers navigate the turbulence of the market places. 
+                                            We can assist you with anything from finding the right architech, contractor, or even new tennants. 
+                                            Let us solve your problems!
+                                        </p>
+                                </div>
+                         </div>
+                  </div>
+                    
+    
+            </div>
+        </div>
+    </div>
+
+
+                     <!--------Loan Application Modal----->
+<div id = "LoanModal" class = "modal fade" role = "dialog">
+    <div class = "modal-dialog modeal-lg">
+       <!-----Modal Content-----> 
+     <div class = "modal-content">
+        <div class = "modal-header">
+            <form class = "form-group">
+            <h4> Loan Request Form</h4>
+            <label>Are you a </label>
+        <div class="radio col-1 form-group">
+                <label class = "radio-inline"><input type="radio" name="broker" value="broker">Broker<br></label> 
+        </div>
+            <label>or a </label>
+             <div class="radio col-1">
+                <label class = "radio-inline"><input type="radio" name="borrower" value="borrower">Borrower?<br></label> 
+             </div>
+
+             <!----first and last name-->
+             <div class="form-group row">
+                <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" id="firstname" name="firstname"
+                        placeholder="First Name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" id="lastname" name="lastname"
+                        placeholder="Last Name">
+                </div>
+           </div>
+           <!--Communication information-->
+           <div class="form-group row">
+                <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
+                <div class="col-5 col-md-3">
+                    <input type="tel" class="form-control" id="areacode" name="areacode"
+                        placeholder="Area code">
+                </div>
+                <div class="col-7 col-md-7">
+                    <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. number">
+                </div>
+            </div>
+            <!--------------Property Infomatuon--------->
+        <div class ="form-group row">
+            <label class="col-12 col-md-2 col-form-label">Loan Amount</label>
+            <div class = "col-5 col-md-3">
+                <input class = "form-control" id = "loanamount" name = "loanamount" placeholder="Loan Amount">
+            </div>
+            <!-----------------Excutive Summary-------->
+            <p>Executive Summary:</p>
+            <input type="file" id="ExecutiveSummary" name="ExecutiveSummary">
+            <!------------Apraisal of property---------->
+            <p>Property Appraisal:</p>
+            <input type="file" id="appraisal" name="appraisal">
+            <!---------Title Report------------------->
+            <p>Title Report:</p>
+            <input type="title" id="title" name="title">
+            <!--------Purchase and Sale Agreement------>
+            <p>Purchase and Sale Agreement:</p>
+            <input type="PSA" id="PSA" name="PSA">
+            <!---------------Submit Button-------------->
+            <div class="mt-3">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+            </form>
+           </div>
+        </div>
+    </div>
+</div>
+
+        <!-----------------------------------------Recent Deals------------------------------------------>
+        <div class = "page-header">
+                <h1 class = col-sm-12>Recent Deals</h1>
+            </div>
+    
+<div id = "recentdeals" class = "card-deck">
+
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src="img/tacoma.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Tacoma Strip Mall</h4>
+              <p class="card-text">
+                    The borrower approached Mahogany to provide cash out refinancing of a restaurant and retail strip center owned since 2003. 
+                    Mahogany was able to refinance the property and provide the borrower with the cash out needed as working capital for the borrower's other business ventures.
+            </p>
+              <ul>
+                  <li>Loan Amount: $4,000,000</li>
+                    <li>Interest Rate: 8.5%</li>   
+              </ul>
+            </div>
+          </div>
+
+          <div class="card" style="width:400px">
+            <img class="card-img-top" src="img/wood.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Chilean forrest</h4>
+              <p class="card-text">
+                    A developer in Pierce County had acquired a valuable piece a real estate in Latin America. We put him in touch with a proffessional wood broker and 
+                    he was able to get the development project he needed to get the project done. 
+            </p>
+              <ul>
+                  <li>Sell Amount: $23,000,000</li>  
+              </ul>
+            </div>
+          </div>
+
+  
+</div>
+
+<!----------------Contact form-------------------------------------------->
+<div id = "contact" class="row row-content">
+    <div class="col-12">
+        <h3>Contact Us</h3>
+    </div>
+    <div class="col-12 col-md-9">
+        <form>
+            <!----Users first and last name-->
+            <div class="form-group row">
+                <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" id="firstname" name="firstname"
+                        placeholder="First Name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" id="lastname" name="lastname"
+                        placeholder="Last Name">
+                </div>
+            </div>
+            <!--Communication information-->
+            <div class="form-group row">
+                <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
+                <div class="col-5 col-md-3">
+                    <input type="tel" class="form-control" id="areacode" name="areacode"
+                        placeholder="Area code">
+                </div>
+                <div class="col-7 col-md-7">
+                    <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. number">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="emailid" class="col-md-2 col-form-label">Email</label>
+                <div class="col-md-10">
+                    <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                </div>
+            </div>
+            <!---------------------------------------------------->
+            <div class="form-group row">
+                <div class="col-md-6 offset-md-2">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+                        <label class="form-check-label" for="approve">
+                            <strong>May we contact you?</strong>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-3 offset-md-1">
+                    <select class="form-control">
+                        <option>Tel.</option>
+                        <option>Email</option>
+                    </select>
+                </div>
+            </div>
+            <!-------------Textarea & Submission----------------->
+            <div class="form-group row">
+                <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                <div class="col-md-10">
+                    <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="offset-md-2 col-md-10">
+                    <button type="submit" class="btn btn-primary">Send Feedback</button>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+</body>
+
+
+
+
+
+
+<!----------------------------------Footer------------------------------------------------->
+<footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#/index.html">Home</a></li>
+                        <li><a href="#/services.html">Services</a></li>
+                        <li><a href="#/recentdeals.html">Recent Deals</a></li>
+                        <li><a href="#/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+                        555, Main Street <br>
+                        Bellevue, WA<br>
+                        98006<br>
+                        <i class="fa fa-phone fa-lg"></i>: +555 555 5555<br>
+                        <i class="fa fa-envelope fa-lg"></i>:
+                        <a href="mailto:confusion@food.net">info@Mahoganyholdings.com</a>
+                    </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
+                                class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook"
+                            href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
+                                class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                                class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                                class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>© Copyright 2018 Mahogany Holdings</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</html>
